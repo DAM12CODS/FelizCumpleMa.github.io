@@ -3,6 +3,8 @@
   /* Fuente del título de portada: cambia aquí si quieres otra */
   --font-family: 'Arial Black', sans-serif;
   --font-title: 'Playfair Display', serif;
+  --turquesa-oscuro: #008B8B;
+  --turquesa-claro: #20B2AA;
 }
 body,html{
   font-family: Roboto Mono, monospace;
@@ -140,7 +142,7 @@ body,html{
   width: 260px;
   height: 100vh;
    backdrop-filter: blur(10px);
-  background: linear-gradient(180deg, #006d6d, #20B2AA);
+   background: linear-gradient(180deg, var(--turquesa-oscuro), var(--turquesa-claro));
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -208,16 +210,12 @@ body,html{
 }
 
 .menu-navegacion a.activo{
-  background: linear-gradient(
-    90deg,
-    rgba(0, 139, 139, 0.5),
-    rgba(32, 178, 170, 0.4)
-  );
+  background: linear-gradient(90deg, var(--turquesa-oscuro), var(--turquesa-claro));
   border-left-color: #20B2AA;
 }
 
 .menu-navegacion a:focus-visible{
-  outline: 2px solid #20B2AA;
+  outline: 2px solid var(--turquesa-claro);
 }
 
 .intro-ejemplos{
@@ -293,7 +291,16 @@ body,html{
 
 /* ====== ESTILOS PARA EJERCICIOS INTERACTIVOS ====== */
 
-.indicador-ronda,
+.indicador-ronda {
+ background: linear-gradient(90deg, var(--turquesa-oscuro), var(--turquesa-claro));
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
 
 .ejercicios-container {
   display: grid;
@@ -324,13 +331,19 @@ body,html{
   font-size: 0.9rem;
 }
 
-.regla-tag,
+.regla-tag {
+  background: linear-gradient(90deg, var(--turquesa-oscuro), var(--turquesa-claro));
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
 
 .numero-pregunta {
   color: #666;
   font-weight: 600;
 }
-
 .pregunta-card h3 {
   color: #111;
   margin: 0 0 20px 0;
@@ -466,7 +479,7 @@ body,html{
 }
 
 .btn-reiniciar {
-  background: linear-gradient(90deg, #2563eb, #ef4444);
+  background: linear-gradient(90deg, var(--turquesa-oscuro), var(--turquesa-claro));
   color: #fff;
   border: none;
   padding: 12px 30px;
@@ -482,7 +495,7 @@ body,html{
   top: 20px;
   left: 20px;
   z-index: 3;
-  background: linear-gradient(90deg, #20B2AA, #008B8B);
+  background: linear-gradient(90deg, var(--turquesa-oscuro), var(--turquesa-claro));
   color: white;
   border: none;
   padding: 12px 18px;
@@ -515,7 +528,7 @@ body,html{
 
 .btn-reiniciar:hover {
   transform: scale(1.05);
-   background: linear-gradient(90deg, #008B8B, #20B2AA);
+   background: linear-gradient(90deg, var(--turquesa-oscuro), var(--turquesa-claro));
 }
 
 /* Responsive */
