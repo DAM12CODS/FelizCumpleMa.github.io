@@ -11,8 +11,7 @@ body,html{
   font-weight: 400;
   font-style: normal;
   color: #fff;
-  background-image: url('imagenes/diseno-fondo-tecnologia-lineas-circuitos-rojos-digitales_1017-27263.avif');
-  background-size: cover;
+  background-color: #008B8B;  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -31,9 +30,7 @@ body,html{
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: url('imagenes/diseno-fondo-tecnologia-lineas-circuitos-rojos-digitales_1017-27263.avif');
- background-size: cover;
-  background-position: center;
+  background: linear-gradient(135deg, #008B8B, #20B2AA);
   color: white;
   position: relative;
 }
@@ -45,8 +42,7 @@ body,html{
   left: 0;
   width: 100%;
   height: 100%;
-  /* Azul → Rojo con opacidad para buen contraste */
-  background: linear-gradient(135deg, rgba(0, 102, 255, 0.55) 0%, rgba(220, 20, 60, 0.55) 100%);
+  background: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
 
@@ -155,10 +151,7 @@ body,html{
 
 /*Vista de la clase card*/
 .card{
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  margin-bottom: 30px;
-  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 .card h3{
   margin-bottom: 15px;
