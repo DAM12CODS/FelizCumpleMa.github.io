@@ -5,13 +5,16 @@
   --font-title: 'Playfair Display', serif;
 }
 body,html{
-
   font-family: Roboto Mono, monospace;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   color: #fff;
-  background-color: #008B8B;  background-size: cover;
+
+  background: linear-gradient(rgba(0, 139, 139, 0.7), rgba(32, 178, 170, 0.7)),
+              url('imagenes/fondo-cumple.jpg');
+
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -30,7 +33,6 @@ body,html{
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(135deg, #008B8B, #20B2AA);
   color: white;
   position: relative;
 }
