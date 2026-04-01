@@ -6,425 +6,108 @@
     <title>Proyecto grupal - Reglas de inferencia</title>
     <link rel="stylesheet" href="decorat.css">
     <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <!-- Fuente para el título de la portada -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
+
 <body>
-        <header class="hero-section" id="inicio">
-            <div class="menu" id="boton-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
 
-            <nav class="menu-navegacion" id="menu-nav">
-                        <a href="#inicio" class="enlace-menu activo">Inicio</a>
-                        <a href="#introduccion" class="enlace-menu">Introducción</a>
-                        <a href="#reglas" class="enlace-menu">Reglas</a>
-                        <a href="#ejemplos" class="enlace-menu">Ejemplos</a>
-                        <a href="#ejercicio" class="enlace-menu">Ejercicio</a>
-                        <a href="#video" class="enlace-menu">Video</a>
-             </nav>
+<header class="hero-section" id="inicio">
+    <div class="menu" id="boton-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
-             <div class="overlay">
-                 <div class="contenedor head">
-                     <h1>Reglas de Inferencia</h1>
-                 </div>
-             </div>
-         </header>
+    <nav class="menu-navegacion" id="menu-nav">
+        <a href="#inicio" class="enlace-menu activo">Inicio</a>
+        <a href="#introduccion" class="enlace-menu">Introducción</a>
+        <a href="#reglas" class="enlace-menu">Reglas</a>
+    </nav>
 
+    <div class="overlay">
+        <div class="contenedor head">
+            <h1>Reglas de Inferencia</h1>
+        </div>
+    </div>
+</header>
 
+<main>
 
-    <main>
-        <section id="introduccion" class="introduccion contenedor">
-            
-            <div class="card">
-            <h2>Introduccion</h2>
-            <P>Las reglas de inferencia son principios lógicos que permiten derivar conclusiones válidas a partir de un conjunto de premisas(proposiciones). Una premisa es una proposición que se asume como
-                verdadera desde el inicio de un razonamiento lógico. A partir de estas premisas se aplican reglas formales con el fin de
-                obtener una nueva proposición, denominada conclusión, que es la que se desea demostrar. Este proceso se conoce como una derivación lógica a partir de premisas.</P>
-            <p>Las reglas de inferencia se utilizan tanto en la lógica proposicional como en la lógica matemática para construir argumentos válidos. Dado que las premisas se consideran
-                verdaderas desde el inicio, si las reglas de inferencia se aplican correctamente, la conclusión obtenida también será verdadera en el sentido lógico.</p>
-            <p>Un argumento es una secuencia de proposiciones, generalmente representadas como
-                p1,p2,p3,…,pn,
-                a partir de las cuales se deriva una conclusión (q). El símbolo ∴ se lee “por lo tanto” y se utiliza para indicar el paso hacia la conclusión (∴ q).</p>
-            <p>Sin embargo, es importante destacar que un argumento no afirma que la conclusión sea verdadera en la realidad, sino que establece que, si las premisas
-                son verdaderas, entonces la conclusión también debe serlo. Por esta razón, se dice que un argumento es válido por su forma lógica y no por el contenido de sus proposiciones.</p>
-                </div>
-        </section>
+<section id="introduccion" class="introduccion contenedor">
+    <div class="card">
+        <h2>Introduccion</h2>
+        <p>Las reglas de inferencia son principios lógicos que permiten derivar conclusiones válidas a partir de un conjunto de premisas.</p>
+    </div>
+</section>
 
-        <section id="reglas" class="contenedor">                           
-            <div class="card">
-            <h2>Reglas de inferencia</h2>
+<section id="reglas" class="contenedor">                           
 
-            <div class="tamaño-tablas">
-            <img
-              src="Imagenes/1.png"
-              alt="Tabla de reglas de inferencia lógica 1"
-              class="imagen-tabla"
-            >
-            <img
-               src = "Imagenes/2.png"
-              alt="Tabla de reglas de inferencia lógica 2"
-              class="imagen-tabla"
-            >
-            </div>
-            </div>
+    <div class="card">
+        <h2>Reglas de inferencia</h2>
 
-            <div class="card">
-            <h3>Modus Ponens</h3>
-            <div class="card-content">
-                
-                <div class="card-text">
-            <p>Como se muestra en la tabla, la estructura de la regla cuenta con p->q y además con p, eso quiere decir que como premisas tenemos esas dos proposiciones. Siendo que las premisas (p->q) y (p)
-                son verdaderas el resultante es q que también debe ser verdadera, caso contrario si (q) fuese falsa, (p->q) también seria falsa. Para este caso es fácil comprobar dado que se maneja con la tabla de
-                verdad de la implicación. Otro caso puede ser que (p->q) y (–q) como premisas el resultante o conclusión será –p, esto sucede nuevamente por la propiedad de la implicación.</p>
-                </div>
-              <img
-              src="Imagenes/3.png"          
-            >
-            </div>
-            </div>
+        <div class="tamaño-tablas">
+            <img src="Imagenes/1.png" class="imagen-tabla">
+            <img src="Imagenes/2.png" class="imagen-tabla">
+        </div>
+    </div>
 
-            <div class="card">
-            <h3>Modus Tollens</h3>
-            <div class="card-content">
+    <div class="card">
+        <h3>Modus Ponens</h3>
+        <p>Si p → q y p son verdaderas, entonces q también lo es.</p>
+    </div>
 
-                <div class="card-text">
-            <p>Esta regla de inferencia utiliza como premisas p→q  y ¬q. Si ambas premisas se asumen como verdaderas, se concluye necesariamente ¬p (∴¬p).
-                La posible confusión suele surgir a partir de la premisa ¬q, ya que esta indica que la proposición q es falsa. Sin embargo, dicha proposición no constituye la conclusión, sino una de
-                las premisas del argumento. Dado que una implicación solo es falsa cuando el antecedente es verdadero y el consecuente es falso, y puesto que q es falsa, el antecedente p no puede
-                ser verdadero. Por lo tanto, se concluye que p es falsa.
-                Esta conclusión puede verificarse mediante la tabla de verdad de la implicación, considerando los valores de verdad negados y no negados de las proposiciones involucradas.</p>
-                </div>
-            <img
-              src="Imagenes/4.png"
-              
-            >
-            </div>
-            </div>
+    <div class="card">
+        <h3>Modus Tollens</h3>
+        <p>Si p → q y ¬q, entonces ¬p.</p>
+    </div>
 
-            <div class="card">
-            <h3>Suma o Generalización</h3>
-            <div class="card-content">
-                
-                <div class="card-text">
-            <p>La regla de inferencia Suma, también conocida como introducción a la disyunción o generalización, establece que dada una proposición cualquiera p, se puede concluir la disyunción p ∨ q (∴ p ∨ q), donde q es una proposición arbitraria.
-              Esta regla se fundamenta en la propiedad de la disyunción, según la cual una proposición disyuntiva es verdadera si al menos uno de sus componentes lo es. Por lo tanto, si p es verdadera, la proposición p ∨ q será verdadera independientemente del valor de verdad de q.
-              En algunos contextos informales, esta regla se describe como “p o cualquier otra proposición”, aunque formalmente se expresa como la introducción de una disyunción a partir de una premisa verdadera. </p>
-              </div>
-            <img
-              src="Imagenes/5.png"             
-            >
-            </div>
-            </div>
+    <div class="card">
+        <h3>Suma</h3>
+        <p>Si p es verdadera, entonces p ∨ q también lo es.</p>
+    </div>
 
-            <div class="card">
-            <h3>Simplificación</h3>
-            <div class="card-content">
+    <div class="card">
+        <h3>Simplificación</h3>
+        <p>Si p ∧ q, entonces p o q.</p>
+    </div>
 
-                <div class="card-text">
-            <p>La regla de inferencia Simplificación establece que, dada una premisa de la forma
-            p ∧ q, se puede concluir cualquiera de sus componentes, es decir, p o q
-            (∴ p) o (∴ q).
-            Esta es una de las reglas más sencillas, ya que se fundamenta directamente en la propiedad de la conjunción. Una conjunción es verdadera únicamente
-            cuando ambas proposiciones que la conforman son verdaderas. Por lo tanto, si se asume como verdadera la proposición p ∧ q, se garantiza que tanto p como q son verdaderas de manera individual.
-            En consecuencia, es válido concluir cualquiera de las dos proposiciones que forman la conjunción, dependiendo de cuál sea necesaria en el razonamiento.
-            </p>
-            </div>
-             <img
-              src="Imagenes/6.png"              
-            >
-            </div>
-            </div>
+    <div class="card">
+        <h3>Conjunción</h3>
+        <p>Si p y q son verdaderas, entonces p ∧ q.</p>
+    </div>
 
-            <div class="card">
-            <h3>Conjunción</h3>
-            <div class="card-content">
+</section>
 
-                <div class="card-text">
-            <p>Para esta regla consideramos las premisas p y q como verdaderas. Con base a la propiedad de la conjunción, se establece que ambas proposiciones son verdaderas, entonces su conjunción
-                debe ser verdadera. (∴ p ∧ q)
-                De igual manera que la regla de la simplificación, es una de las reglas más sencillas por que únicamente se aplica la lógica de la conjunción. Sin información adicional se llega a la lógica
-                fundamental de la conjunción llegando a una sola proposición compuesta.
-                </p>
-                </div>
-             <img
-              src="Imagenes/7.png"              
-            >
-            </div>
-            </div>
+</main>
 
-            <div class="card">
-            <h3>Silogismo Hipotético</h3>
-            <div class="card-content">
-
-                <div class="card-text">
-            <p>La regla de inferencia Silogismo Hipotético o también conocida como la regla de la transitividad, menciona que al tener dos proposiciones compuestas p->q y q ->r, entonces se concluye p->r (∴p->r).
-                Esta regla se fundamenta en el carácter transitivo de la implicación lógica: si la verdad de p garantiza la verdad de q, y la verdad de q garantiza la verdad de r, entonces la verdad de p garantiza necesariamente la verdad de r.
-                A manera de ejemplo, si el objetivo es ir desde el punto A hasta el punto B, y el único camino posible es atravesar una secuencia de puntos intermedios A→1→2→3→B, entonces, dado que cada tramo mantiene una relación de dependencia, se puede concluir que existe una relación directa entre A y B.
-            </p>
-            </div>
-             <img
-              src="Imagenes/8.png"              
-            >
-            </div>
-            </div>
-
-            <div class="card">
-            <h3>Silogismo Disyuntivo</h3>
-            <div class="card-content">        
-
-                <div class="card-text">
-            <p>El Silogismo Disyuntivo es una regla de inferencia que, para muchos estudiantes, resulta una de las más complejas. Su estructura se compone de las premisas p ∨ q y ¬p, a partir de las cuales se concluye q (∴ q).
-            Esta conclusión se justifica porque, al ser verdadera la proposición ¬p, se establece que p es falsa. Dado que la disyunción p ∨ q es verdadera y una disyunción solo es falsa cuando ambos componentes son falsos, es necesario que q sea verdadera para que la proposición disyuntiva se mantenga verdadera.
-            Por lo tanto, esta regla se fundamenta en el principio lógico de la disyunción, según el cual basta con que una de las proposiciones sea verdadera para que toda la disyunción lo sea.
-            </p>
-            </div>
-             <img
-              src="Imagenes/9.png"             
-            >
-            </div>
-            </div>
-
-        </section>
-
-       
-    </main>
-
-
-
-    <script>
-        // ====== MENÚ HAMBURGUESA ======
-        const botonMenu = document.getElementById('boton-menu');
-        const menuNav = document.getElementById('menu-nav');
-        const enlacesMenu = document.querySelectorAll('.enlace-menu');
-
-        botonMenu.addEventListener('click', function() {
-            menuNav.classList.toggle('activo');
-            botonMenu.classList.toggle('activo');
-        });
-
-        enlacesMenu.forEach(enlace => {
-            enlace.addEventListener('click', function() {
-                enlacesMenu.forEach(item => item.classList.remove('activo'));
-                enlace.classList.add('activo');
-                menuNav.classList.remove('activo');
-                botonMenu.classList.remove('activo');
-            });
-        });
-
-        document.addEventListener('click', function(event) {
-            if (!menuNav.contains(event.target) && !botonMenu.contains(event.target)) {
-                menuNav.classList.remove('activo');
-                botonMenu.classList.remove('activo');
-            }
-        });
-
-        // ====== EJERCICIOS INTERACTIVOS CON 4 RONDAS ======
-        let rondaActual = 1;
-        const totalRondas = 4;
-        let puntuacionTotal = 0;
-        let respuestasRonda = {};
-        const indicadorRonda = document.getElementById('indicador-ronda');
-        const siguienteRondaBtn = document.getElementById('siguiente-ronda-btn');
-        const reiniciarBtn = document.getElementById('reiniciar-btn');
-        const puntuacionElement = document.getElementById('puntuacion');
-        const ejerciciosContainer = document.getElementById('ejercicios-container');
-
-        function cargarRonda(numRonda) {
-            // Ocultar todas las rondas
-            document.querySelectorAll('.ronda').forEach(r => r.style.display = 'none');
-            // Mostrar la ronda actual
-            document.querySelector(`.ronda[data-ronda="${numRonda}"]`).style.display = 'block';
-            // Actualizar indicador
-            indicadorRonda.textContent = `Ronda ${numRonda} de ${totalRondas}`;
-            // Reiniciar respuestas de la ronda
-            respuestasRonda = {};
-            // Ocultar botones
-            siguienteRondaBtn.style.display = 'none';
-            reiniciarBtn.style.display = 'none';
-            puntuacionElement.textContent = 'Responde todas las preguntas para ver tu puntuación';
-            puntuacionElement.style.color = '#999';
-            puntuacionElement.style.fontSize = '1rem';
-            // Agregar eventos a las preguntas de esta ronda
-            agregarEventosPreguntasRonda(numRonda);
-        }
-
-        function agregarEventosPreguntasRonda(numRonda) {
-            const rondaElement = document.querySelector(`.ronda[data-ronda="${numRonda}"]`);
-            const preguntas = rondaElement.querySelectorAll('.pregunta-card');
-
-            preguntas.forEach((card, indexCard) => {
-                respuestasRonda[indexCard] = null;
-                const botonesOpcion = card.querySelectorAll('.opcion-btn');
-                const feedbackDiv = card.querySelector('.feedback');
-
-                // Limpiar eventos anteriores
-                botonesOpcion.forEach(btn => {
-                    btn.disabled = false;
-                    btn.onclick = null;
-                    btn.classList.remove('correcta', 'incorrecta', 'seleccionada');
-                });
-                feedbackDiv.classList.remove('visible', 'correcto', 'incorrecto');
-
-                // Agregar nuevos eventos
-                botonesOpcion.forEach(btn => {
-                    btn.addEventListener('click', function() {
-                        manejarRespuesta(this, botonesOpcion, feedbackDiv, indexCard);
-                    });
-                });
-            });
-        }
-
-        function manejarRespuesta(botonSeleccionado, botonesOpcion, feedbackDiv, indexCard) {
-            // Deshabilitar todos los botones
-            botonesOpcion.forEach(b => b.disabled = true);
-
-            const esCorrecta = botonSeleccionado.dataset.respuesta === 'correcta';
-            respuestasRonda[indexCard] = {
-                respuesta: botonSeleccionado.textContent,
-                correcta: esCorrecta
-            };
-
-            // Mostrar retroalimentación
-            if (esCorrecta) {
-                botonSeleccionado.classList.add('correcta');
-                feedbackDiv.classList.add('visible', 'correcto');
-                feedbackDiv.textContent = '¡Correcto! Excelente respuesta.';
-            } else {
-                botonSeleccionado.classList.add('incorrecta');
-                feedbackDiv.classList.add('visible', 'incorrecto');
-                feedbackDiv.textContent = 'Incorrecto. Intenta con otra pregunta.';
-            }
-
-            // Mostrar respuesta correcta
-            botonesOpcion.forEach(b => {
-                if (b.dataset.respuesta === 'correcta' && b !== botonSeleccionado) {
-                    b.classList.add('correcta');
-                }
-            });
-
-            // Verificar si se completó la ronda
-            verificarRondaCompleta();
-        }
-
-        function verificarRondaCompleta() {
-            const rondaElement = document.querySelector(`.ronda[data-ronda="${rondaActual}"]`);
-            const totalPreguntas = rondaElement.querySelectorAll('.pregunta-card').length;
-            let respondidas = 0;
-            let correctas = 0;
-
-            Object.values(respuestasRonda).forEach(resp => {
-                if (resp !== null) {
-                    respondidas++;
-                    if (resp.correcta) correctas++;
-                }
-            });
-
-            if (respondidas === totalPreguntas) {
-                mostrarResultadoRonda(correctas, totalPreguntas);
-            }
-        }
-
-        function mostrarResultadoRonda(correctas, total) {
-            const porcentaje = Math.round((correctas / total) * 100);
-            puntuacionTotal += correctas;
-            let mensaje = `Ronda ${rondaActual}: ${correctas}/${total} correctas (${porcentaje}%)`;
-
-            if (porcentaje === 100) {
-                mensaje += ' 🎉 ¡Perfecto!';
-            } else if (porcentaje >= 80) {
-                mensaje += ' 👏 ¡Muy bien!';
-            } else if (porcentaje >= 60) {
-                mensaje += ' 👍 Bien';
-            } else {
-                mensaje += ' 📚 Sigue practicando';
-            }
-
-            puntuacionElement.textContent = mensaje;
-            puntuacionElement.style.color = '#111';
-            puntuacionElement.style.fontSize = '1.1rem';
-
-            if (rondaActual < totalRondas) {
-                siguienteRondaBtn.style.display = 'inline-block';
-                siguienteRondaBtn.onclick = function() {
-                    rondaActual++;
-                    cargarRonda(rondaActual);
-                };
-            } else {
-                mostrarPuntuacionFinal();
-            }
-        }
-
-        function mostrarPuntuacionFinal() {
-            const puntuacionMaxima = totalRondas * 7;
-            const porcentajeFinal = Math.round((puntuacionTotal / puntuacionMaxima) * 100);
-            let mensajeFinal = '';
-
-            if (porcentajeFinal === 100) {
-                mensajeFinal = ` ¡PERFECTO! Obtuviste ${puntuacionTotal}/${puntuacionMaxima} puntos (${porcentajeFinal}%)`;
-            } else if (porcentajeFinal >= 90) {
-                mensajeFinal = ` ¡EXCELENTE! Obtuviste ${puntuacionTotal}/${puntuacionMaxima} puntos (${porcentajeFinal}%)`;
-            } else if (porcentajeFinal >= 80) {
-                mensajeFinal = ` ¡MUY BIEN! Obtuviste ${puntuacionTotal}/${puntuacionMaxima} puntos (${porcentajeFinal}%)`;
-            } else if (porcentajeFinal >= 70) {
-                mensajeFinal = ` BIEN. Obtuviste ${puntuacionTotal}/${puntuacionMaxima} puntos (${porcentajeFinal}%)`;
-            } else if (porcentajeFinal >= 60) {
-                mensajeFinal = ` Sigue practicando. Obtuviste ${puntuacionTotal}/${puntuacionMaxima} puntos (${porcentajeFinal}%)`;
-            } else {
-                mensajeFinal = ` Necesitas estudiar más. Obtuviste ${puntuacionTotal}/${puntuacionMaxima} puntos (${porcentajeFinal}%)`;
-            }
-
-            puntuacionElement.textContent = mensajeFinal;
-            reiniciarBtn.style.display = 'inline-block';
-            reiniciarBtn.onclick = function() {
-                location.reload();
-            };
-        }
-
-        // Cargar la primera ronda al iniciar
-        cargarRonda(1);
-    </script>
-
-
-
-<!--ESTE ES EL PIE DE PAGINA-->  
+<!-- FOOTER LIMPIO -->
 <footer class="footer"> 
   <div class="footer-contenido">
-
     <div class="footer-info">
       <h1>MathDiscretas EPN</h1>
       <p>Solventamos cualquier duda que surja durante tu aprendizaje.</p>
     </div>
-
-    <div class="footer-ayuda">
-      <a class="icono-ayuda" id="botnoAyuda" title="Tengo una pregunta">
-        <i class='bx bx-help-circle'></i>
-      </a>
-    </div>
   </div>
-   
+</footer>
 
-  <!--SECCION DE LOS COMENTARIOS-->  
-  <div class="footer-comentarios" id="comentarios">
-  <h3>Déjanos tu pregunta</h3>
+<script>
+const botonMenu = document.getElementById('boton-menu');
+const menuNav = document.getElementById('menu-nav');
+const enlacesMenu = document.querySelectorAll('.enlace-menu');
 
-  <form class="ventana-comentarios">
-    <input type="text" placeholder="Tu nombre" required>
-    <input type="email" placeholder="Tu correo" required>
-    <textarea placeholder="Escribe tu comentario..." required></textarea>
-    <button type="submit">Enviar</button>    
-  </form>
-  </div>
-  <a href="#comentarios" class="icono-ayuda" id="botonAyuda">
-    <i class='bx bx-help-circle'></i>
-  </a>
+botonMenu.addEventListener('click', function() {
+    menuNav.classList.toggle('activo');
+});
 
-  </footer>
+enlacesMenu.forEach(enlace => {
+    enlace.addEventListener('click', function() {
+        enlacesMenu.forEach(item => item.classList.remove('activo'));
+        enlace.classList.add('activo');
+        menuNav.classList.remove('activo');
+    });
+});
+</script>
 
- </body>
+</body>
 </html>
