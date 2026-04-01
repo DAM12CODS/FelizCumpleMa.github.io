@@ -93,6 +93,28 @@ enlacesMenu.forEach(enlace => {
     });
 });
 </script>
+<script>
+const mensajes = [
+  "🎂 ¡Feliz cumpleaños!",
+  "🎉 Que todos tus sueños se cumplan",
+  "🎈 Disfruta tu día al máximo",
+  "✨ Hoy es tu día especial",
+  "🥳 Que este año sea increíble para ti",
+  "💙 Mucha felicidad y éxitos"
+];
 
+function mostrarSorpresa(){
+  const mensaje = document.getElementById("mensaje-sorpresa");
+
+  // Elegir mensaje aleatorio
+  const random = mensajes[Math.floor(Math.random() * mensajes.length)];
+
+  // Cambiar texto
+  mensaje.textContent = random;
+
+  // Mostrar con animación
+  mensaje.classList.add("mensaje-visible");
+}
+</script>
 </body>
 </html>
